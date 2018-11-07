@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void t4() {
+    private void questPermissions() {
         new RxPermissions(this).requestEachCombined(Manifest.permission.CAMERA, Manifest.permission.SEND_SMS)
                 .subscribe(permission -> {
                     if (permission.granted)
